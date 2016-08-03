@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072CF1771D508C8C0081BC95 /* winicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 072CF1761D508C8C0081BC95 /* winicon.png */; };
+		072CF17A1D5091130081BC95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072CF1781D5091130081BC95 /* Main.storyboard */; };
+		072CF17C1D50F14B0081BC95 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 072CF17B1D50F14B0081BC95 /* card.png */; };
+		07512E861D4BC4D100FC70A9 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 07512E851D4BC4D100FC70A9 /* phone.png */; };
+		078654751D4A468300D61689 /* Discedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078654741D4A468300D61689 /* Discedit.swift */; };
+		078654771D4B4EE700D61689 /* iconsocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654761D4B4EE700D61689 /* iconsocial.png */; };
+		078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654781D4B4F1800D61689 /* icon_nav_facebook.png */; };
+		0786547B1D4B620500D61689 /* menuslide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786547A1D4B620500D61689 /* menuslide.swift */; };
+		0786547D1D4B635300D61689 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 0786547C1D4B635300D61689 /* line.png */; };
+		0786547F1D4B64F200D61689 /* icon_nav_facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0786547E1D4B64F200D61689 /* icon_nav_facebook.png */; };
+		07D809601D479E950069200E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8095F1D479E950069200E /* AppDelegate.swift */; };
+		07D809621D479E950069200E /* Swipemaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809611D479E950069200E /* Swipemaster.swift */; };
+		07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07D809661D479E950069200E /* DeepLifeApp.xcdatamodeld */; };
+		07D8096A1D479E950069200E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D809691D479E950069200E /* Assets.xcassets */; };
+		07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D8096B1D479E950069200E /* LaunchScreen.storyboard */; };
+		07D809781D479E950069200E /* DeepLifeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809771D479E950069200E /* DeepLifeAppTests.swift */; };
+		07D809831D479E950069200E /* DeepLifeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809821D479E950069200E /* DeepLifeAppUITests.swift */; };
+		07D809961D47A3CD0069200E /* Swipe0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809941D47A3CD0069200E /* Swipe0.swift */; };
+		07D809971D47A3CD0069200E /* Swipe0.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809951D47A3CD0069200E /* Swipe0.xib */; };
+		07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809981D47A4AA0069200E /* Swipe1.swift */; };
+		07D8099B1D47A4AA0069200E /* Swipe1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809991D47A4AA0069200E /* Swipe1.xib */; };
+		07D809A01D47A5F70069200E /* help_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D8099F1D47A5F70069200E /* help_1.png */; };
+		07D809A21D47A6070069200E /* help_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809A11D47A6070069200E /* help_2.png */; };
+		07D809A41D47A6140069200E /* help_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809A31D47A6140069200E /* help_3.png */; };
+		07D809AB1D47EA830069200E /* Discadd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809AA1D47EA830069200E /* Discadd.swift */; };
+		07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809AC1D47F32E0069200E /* Swipe2.swift */; };
+		07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07D809AD1D47F32E0069200E /* Swipe2.xib */; };
+		07D809B31D47F5C30069200E /* splashlogo_xhdpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */; };
+		07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B41D47FBFB0069200E /* icon_nav_man.png */; };
+		07D809B71D47FC0C0069200E /* icon_nav_schedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B61D47FC0C0069200E /* icon_nav_schedule.png */; };
+		07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809B81D47FC1E0069200E /* icon_nav_share.png */; };
+		07D809BB1D47FC3B0069200E /* icon_nav_learn.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809BA1D47FC3B0069200E /* icon_nav_learn.png */; };
+		07D809C51D480B970069200E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D809C41D480B970069200E /* SWRevealViewController.m */; };
+		07D809CB1D4870020069200E /* menuu.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809CA1D4870020069200E /* menuu.png */; };
+		07D809CD1D4870260069200E /* menubar.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D809CC1D4870260069200E /* menubar.png */; };
+		07D809CF1D4870790069200E /* newsfeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809CE1D4870790069200E /* newsfeed.swift */; };
+		07D809D11D48715B0069200E /* schedules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809D01D48715B0069200E /* schedules.swift */; };
+		07D809D31D4871F60069200E /* share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809D21D4871F60069200E /* share.swift */; };
+		07D809F11D4882930069200E /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809F01D4882930069200E /* login.swift */; };
+		07D809FA1D4887FF0069200E /* Disciplelist+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809F81D4887FF0069200E /* Disciplelist+CoreDataProperties.swift */; };
+		07D809FB1D4887FF0069200E /* Disciplelistt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809F91D4887FF0069200E /* Disciplelistt.swift */; };
+		07D809FF1D489F1A0069200E /* disctable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D809FE1D489F1A0069200E /* disctable.swift */; };
+		07D80A011D48AADB0069200E /* splashlogo_ldpi.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A001D48AADB0069200E /* splashlogo_ldpi.png */; };
+		07D80A031D48AB150069200E /* icondisciple.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A021D48AB150069200E /* icondisciple.png */; };
+		07D80A051D48AB370069200E /* adddisciple.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A041D48AB370069200E /* adddisciple.png */; };
+		07D80A071D48AB610069200E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A061D48AB610069200E /* back.png */; };
+		07D80A091D48E07C0069200E /* menuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D80A081D48E07C0069200E /* menuController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07D809741D479E950069200E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07D809541D479E950069200E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07D8095B1D479E950069200E;
+			remoteInfo = DeepLifeApp;
+		};
+		07D8097F1D479E950069200E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07D809541D479E950069200E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07D8095B1D479E950069200E;
+			remoteInfo = DeepLifeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		072CF1761D508C8C0081BC95 /* winicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winicon.png; sourceTree = "<group>"; };
+		072CF1791D5091130081BC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		072CF17B1D50F14B0081BC95 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		07512E851D4BC4D100FC70A9 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
+		078654741D4A468300D61689 /* Discedit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discedit.swift; sourceTree = "<group>"; };
+		078654761D4B4EE700D61689 /* iconsocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsocial.png; sourceTree = "<group>"; };
+		078654781D4B4F1800D61689 /* icon_nav_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_facebook.png; sourceTree = "<group>"; };
+		0786547A1D4B620500D61689 /* menuslide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuslide.swift; sourceTree = "<group>"; };
+		0786547C1D4B635300D61689 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		0786547E1D4B64F200D61689 /* icon_nav_facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_facebook.png; sourceTree = "<group>"; };
+		07D8095C1D479E950069200E /* DeepLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D8095F1D479E950069200E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07D809611D479E950069200E /* Swipemaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swipemaster.swift; sourceTree = "<group>"; };
+		07D809671D479E950069200E /* DeepLifeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepLifeApp.xcdatamodel; sourceTree = "<group>"; };
+		07D809691D479E950069200E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07D8096C1D479E950069200E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07D8096E1D479E950069200E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D809731D479E950069200E /* DeepLifeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLifeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D809771D479E950069200E /* DeepLifeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLifeAppTests.swift; sourceTree = "<group>"; };
+		07D809791D479E950069200E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D8097E1D479E950069200E /* DeepLifeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLifeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D809821D479E950069200E /* DeepLifeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLifeAppUITests.swift; sourceTree = "<group>"; };
+		07D809841D479E950069200E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07D809941D47A3CD0069200E /* Swipe0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe0.swift; sourceTree = "<group>"; };
+		07D809951D47A3CD0069200E /* Swipe0.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe0.xib; sourceTree = "<group>"; };
+		07D809981D47A4AA0069200E /* Swipe1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe1.swift; sourceTree = "<group>"; };
+		07D809991D47A4AA0069200E /* Swipe1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe1.xib; sourceTree = "<group>"; };
+		07D8099F1D47A5F70069200E /* help_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_1.png; sourceTree = "<group>"; };
+		07D809A11D47A6070069200E /* help_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_2.png; sourceTree = "<group>"; };
+		07D809A31D47A6140069200E /* help_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_3.png; sourceTree = "<group>"; };
+		07D809AA1D47EA830069200E /* Discadd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discadd.swift; sourceTree = "<group>"; };
+		07D809AC1D47F32E0069200E /* Swipe2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swipe2.swift; sourceTree = "<group>"; };
+		07D809AD1D47F32E0069200E /* Swipe2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Swipe2.xib; sourceTree = "<group>"; };
+		07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashlogo_xhdpi.png; sourceTree = "<group>"; };
+		07D809B41D47FBFB0069200E /* icon_nav_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_man.png; sourceTree = "<group>"; };
+		07D809B61D47FC0C0069200E /* icon_nav_schedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_schedule.png; sourceTree = "<group>"; };
+		07D809B81D47FC1E0069200E /* icon_nav_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_share.png; sourceTree = "<group>"; };
+		07D809BA1D47FC3B0069200E /* icon_nav_learn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_nav_learn.png; sourceTree = "<group>"; };
+		07D809BD1D47FF4D0069200E /* DeepLifeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeepLifeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		07D809C31D480B970069200E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		07D809C41D480B970069200E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		07D809CA1D4870020069200E /* menuu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuu.png; sourceTree = "<group>"; };
+		07D809CC1D4870260069200E /* menubar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubar.png; sourceTree = "<group>"; };
+		07D809CE1D4870790069200E /* newsfeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = newsfeed.swift; path = ../newsfeed.swift; sourceTree = "<group>"; };
+		07D809D01D48715B0069200E /* schedules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schedules.swift; sourceTree = "<group>"; };
+		07D809D21D4871F60069200E /* share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = share.swift; sourceTree = "<group>"; };
+		07D809F01D4882930069200E /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		07D809F81D4887FF0069200E /* Disciplelist+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Disciplelist+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07D809F91D4887FF0069200E /* Disciplelistt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disciplelistt.swift; sourceTree = "<group>"; };
+		07D809FE1D489F1A0069200E /* disctable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = disctable.swift; sourceTree = "<group>"; };
+		07D80A001D48AADB0069200E /* splashlogo_ldpi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashlogo_ldpi.png; sourceTree = "<group>"; };
+		07D80A021D48AB150069200E /* icondisciple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icondisciple.png; sourceTree = "<group>"; };
+		07D80A041D48AB370069200E /* adddisciple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adddisciple.png; sourceTree = "<group>"; };
+		07D80A061D48AB610069200E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		07D80A081D48E07C0069200E /* menuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = menuController.swift; path = ../menuController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07D809591D479E950069200E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D809701D479E950069200E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D8097B1D479E950069200E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D809531D479E950069200E = {
+			isa = PBXGroup;
+			children = (
+				07D809F81D4887FF0069200E /* Disciplelist+CoreDataProperties.swift */,
+				07D809F91D4887FF0069200E /* Disciplelistt.swift */,
+				07D809BC1D47FF190069200E /* Helpers */,
+				07D809A91D47AE250069200E /* Swipable */,
+				07D8099C1D47A5C00069200E /* Images */,
+				07D8095E1D479E950069200E /* DeepLifeApp */,
+				07D809761D479E950069200E /* DeepLifeAppTests */,
+				07D809811D479E950069200E /* DeepLifeAppUITests */,
+				07D8095D1D479E950069200E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07D8095D1D479E950069200E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D8095C1D479E950069200E /* DeepLifeApp.app */,
+				07D809731D479E950069200E /* DeepLifeAppTests.xctest */,
+				07D8097E1D479E950069200E /* DeepLifeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07D8095E1D479E950069200E /* DeepLifeApp */ = {
+			isa = PBXGroup;
+			children = (
+				072CF1781D5091130081BC95 /* Main.storyboard */,
+				07D80A081D48E07C0069200E /* menuController.swift */,
+				07D809CE1D4870790069200E /* newsfeed.swift */,
+				07D8095F1D479E950069200E /* AppDelegate.swift */,
+				07D809611D479E950069200E /* Swipemaster.swift */,
+				07D809AA1D47EA830069200E /* Discadd.swift */,
+				07D809691D479E950069200E /* Assets.xcassets */,
+				07D8096B1D479E950069200E /* LaunchScreen.storyboard */,
+				07D8096E1D479E950069200E /* Info.plist */,
+				07D809661D479E950069200E /* DeepLifeApp.xcdatamodeld */,
+				07D809D01D48715B0069200E /* schedules.swift */,
+				07D809D21D4871F60069200E /* share.swift */,
+				07D809F01D4882930069200E /* login.swift */,
+				07D809FE1D489F1A0069200E /* disctable.swift */,
+				078654741D4A468300D61689 /* Discedit.swift */,
+				0786547A1D4B620500D61689 /* menuslide.swift */,
+			);
+			path = DeepLifeApp;
+			sourceTree = "<group>";
+		};
+		07D809761D479E950069200E /* DeepLifeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				07D809771D479E950069200E /* DeepLifeAppTests.swift */,
+				07D809791D479E950069200E /* Info.plist */,
+			);
+			path = DeepLifeAppTests;
+			sourceTree = "<group>";
+		};
+		07D809811D479E950069200E /* DeepLifeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07D809821D479E950069200E /* DeepLifeAppUITests.swift */,
+				07D809841D479E950069200E /* Info.plist */,
+			);
+			path = DeepLifeAppUITests;
+			sourceTree = "<group>";
+		};
+		07D8099C1D47A5C00069200E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				072CF17B1D50F14B0081BC95 /* card.png */,
+				072CF1761D508C8C0081BC95 /* winicon.png */,
+				07512E851D4BC4D100FC70A9 /* phone.png */,
+				0786547E1D4B64F200D61689 /* icon_nav_facebook.png */,
+				0786547C1D4B635300D61689 /* line.png */,
+				078654781D4B4F1800D61689 /* icon_nav_facebook.png */,
+				078654761D4B4EE700D61689 /* iconsocial.png */,
+				07D80A061D48AB610069200E /* back.png */,
+				07D80A041D48AB370069200E /* adddisciple.png */,
+				07D80A021D48AB150069200E /* icondisciple.png */,
+				07D80A001D48AADB0069200E /* splashlogo_ldpi.png */,
+				07D809CC1D4870260069200E /* menubar.png */,
+				07D809CA1D4870020069200E /* menuu.png */,
+				07D809BA1D47FC3B0069200E /* icon_nav_learn.png */,
+				07D809B81D47FC1E0069200E /* icon_nav_share.png */,
+				07D809B61D47FC0C0069200E /* icon_nav_schedule.png */,
+				07D809B41D47FBFB0069200E /* icon_nav_man.png */,
+				07D809B11D47F5C30069200E /* splashlogo_xhdpi.png */,
+				07D809A31D47A6140069200E /* help_3.png */,
+				07D809A11D47A6070069200E /* help_2.png */,
+				07D8099F1D47A5F70069200E /* help_1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		07D809A91D47AE250069200E /* Swipable */ = {
+			isa = PBXGroup;
+			children = (
+				07D809981D47A4AA0069200E /* Swipe1.swift */,
+				07D809991D47A4AA0069200E /* Swipe1.xib */,
+				07D809941D47A3CD0069200E /* Swipe0.swift */,
+				07D809951D47A3CD0069200E /* Swipe0.xib */,
+				07D809AC1D47F32E0069200E /* Swipe2.swift */,
+				07D809AD1D47F32E0069200E /* Swipe2.xib */,
+			);
+			name = Swipable;
+			sourceTree = "<group>";
+		};
+		07D809BC1D47FF190069200E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				07D809C31D480B970069200E /* SWRevealViewController.h */,
+				07D809C41D480B970069200E /* SWRevealViewController.m */,
+				07D809BD1D47FF4D0069200E /* DeepLifeApp-Bridging-Header.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07D8095B1D479E950069200E /* DeepLifeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D809871D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeApp" */;
+			buildPhases = (
+				07D809581D479E950069200E /* Sources */,
+				07D809591D479E950069200E /* Frameworks */,
+				07D8095A1D479E950069200E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepLifeApp;
+			productName = DeepLifeApp;
+			productReference = 07D8095C1D479E950069200E /* DeepLifeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07D809721D479E950069200E /* DeepLifeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D8098A1D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeAppTests" */;
+			buildPhases = (
+				07D8096F1D479E950069200E /* Sources */,
+				07D809701D479E950069200E /* Frameworks */,
+				07D809711D479E950069200E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07D809751D479E950069200E /* PBXTargetDependency */,
+			);
+			name = DeepLifeAppTests;
+			productName = DeepLifeAppTests;
+			productReference = 07D809731D479E950069200E /* DeepLifeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07D8097D1D479E950069200E /* DeepLifeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D8098D1D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeAppUITests" */;
+			buildPhases = (
+				07D8097A1D479E950069200E /* Sources */,
+				07D8097B1D479E950069200E /* Frameworks */,
+				07D8097C1D479E950069200E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07D809801D479E950069200E /* PBXTargetDependency */,
+			);
+			name = DeepLifeAppUITests;
+			productName = DeepLifeAppUITests;
+			productReference = 07D8097E1D479E950069200E /* DeepLifeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07D809541D479E950069200E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Aman;
+				TargetAttributes = {
+					07D8095B1D479E950069200E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = A67JZP37YK;
+					};
+					07D809721D479E950069200E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = A67JZP37YK;
+						TestTargetID = 07D8095B1D479E950069200E;
+					};
+					07D8097D1D479E950069200E = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = A67JZP37YK;
+						TestTargetID = 07D8095B1D479E950069200E;
+					};
+				};
+			};
+			buildConfigurationList = 07D809571D479E950069200E /* Build configuration list for PBXProject "DeepLifeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07D809531D479E950069200E;
+			productRefGroup = 07D8095D1D479E950069200E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07D8095B1D479E950069200E /* DeepLifeApp */,
+				07D809721D479E950069200E /* DeepLifeAppTests */,
+				07D8097D1D479E950069200E /* DeepLifeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07D8095A1D479E950069200E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D809CB1D4870020069200E /* menuu.png in Resources */,
+				07D809A41D47A6140069200E /* help_3.png in Resources */,
+				072CF17C1D50F14B0081BC95 /* card.png in Resources */,
+				078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */,
+				0786547D1D4B635300D61689 /* line.png in Resources */,
+				07D8096D1D479E950069200E /* LaunchScreen.storyboard in Resources */,
+				07D8096A1D479E950069200E /* Assets.xcassets in Resources */,
+				07D809B51D47FBFB0069200E /* icon_nav_man.png in Resources */,
+				072CF17A1D5091130081BC95 /* Main.storyboard in Resources */,
+				07512E861D4BC4D100FC70A9 /* phone.png in Resources */,
+				078654771D4B4EE700D61689 /* iconsocial.png in Resources */,
+				07D809AF1D47F32E0069200E /* Swipe2.xib in Resources */,
+				07D809B91D47FC1E0069200E /* icon_nav_share.png in Resources */,
+				072CF1771D508C8C0081BC95 /* winicon.png in Resources */,
+				07D809B71D47FC0C0069200E /* icon_nav_schedule.png in Resources */,
+				07D809CD1D4870260069200E /* menubar.png in Resources */,
+				07D809B31D47F5C30069200E /* splashlogo_xhdpi.png in Resources */,
+				07D8099B1D47A4AA0069200E /* Swipe1.xib in Resources */,
+				07D80A051D48AB370069200E /* adddisciple.png in Resources */,
+				07D809A01D47A5F70069200E /* help_1.png in Resources */,
+				07D80A011D48AADB0069200E /* splashlogo_ldpi.png in Resources */,
+				07D809BB1D47FC3B0069200E /* icon_nav_learn.png in Resources */,
+				07D80A071D48AB610069200E /* back.png in Resources */,
+				07D809971D47A3CD0069200E /* Swipe0.xib in Resources */,
+				07D809A21D47A6070069200E /* help_2.png in Resources */,
+				0786547F1D4B64F200D61689 /* icon_nav_facebook.png in Resources */,
+				07D80A031D48AB150069200E /* icondisciple.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D809711D479E950069200E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D8097C1D479E950069200E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07D809581D479E950069200E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D809621D479E950069200E /* Swipemaster.swift in Sources */,
+				07D809FB1D4887FF0069200E /* Disciplelistt.swift in Sources */,
+				07D809D31D4871F60069200E /* share.swift in Sources */,
+				07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */,
+				07D809FF1D489F1A0069200E /* disctable.swift in Sources */,
+				07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */,
+				07D809D11D48715B0069200E /* schedules.swift in Sources */,
+				07D809F11D4882930069200E /* login.swift in Sources */,
+				07D80A091D48E07C0069200E /* menuController.swift in Sources */,
+				07D809FA1D4887FF0069200E /* Disciplelist+CoreDataProperties.swift in Sources */,
+				078654751D4A468300D61689 /* Discedit.swift in Sources */,
+				07D809601D479E950069200E /* AppDelegate.swift in Sources */,
+				07D809C51D480B970069200E /* SWRevealViewController.m in Sources */,
+				07D809CF1D4870790069200E /* newsfeed.swift in Sources */,
+				0786547B1D4B620500D61689 /* menuslide.swift in Sources */,
+				07D809AB1D47EA830069200E /* Discadd.swift in Sources */,
+				07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */,
+				07D809961D47A3CD0069200E /* Swipe0.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D8096F1D479E950069200E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D809781D479E950069200E /* DeepLifeAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07D8097A1D479E950069200E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D809831D479E950069200E /* DeepLifeAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07D809751D479E950069200E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07D8095B1D479E950069200E /* DeepLifeApp */;
+			targetProxy = 07D809741D479E950069200E /* PBXContainerItemProxy */;
+		};
+		07D809801D479E950069200E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07D8095B1D479E950069200E /* DeepLifeApp */;
+			targetProxy = 07D8097F1D479E950069200E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		072CF1781D5091130081BC95 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				072CF1791D5091130081BC95 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07D8096B1D479E950069200E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D8096C1D479E950069200E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07D809851D479E950069200E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07D809861D479E950069200E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07D809881D479E950069200E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = DeepLifeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepLifeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07D809891D479E950069200E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = DeepLifeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeepLifeApp-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		07D8098B1D479E950069200E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeepLifeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLifeApp.app/DeepLifeApp";
+			};
+			name = Debug;
+		};
+		07D8098C1D479E950069200E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeepLifeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepLifeApp.app/DeepLifeApp";
+			};
+			name = Release;
+		};
+		07D8098E1D479E950069200E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeepLifeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeepLifeApp;
+			};
+			name = Debug;
+		};
+		07D8098F1D479E950069200E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeepLifeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hhj.DeepLifeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeepLifeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07D809571D479E950069200E /* Build configuration list for PBXProject "DeepLifeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D809851D479E950069200E /* Debug */,
+				07D809861D479E950069200E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D809871D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D809881D479E950069200E /* Debug */,
+				07D809891D479E950069200E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D8098A1D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D8098B1D479E950069200E /* Debug */,
+				07D8098C1D479E950069200E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D8098D1D479E950069200E /* Build configuration list for PBXNativeTarget "DeepLifeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D8098E1D479E950069200E /* Debug */,
+				07D8098F1D479E950069200E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07D809661D479E950069200E /* DeepLifeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07D809671D479E950069200E /* DeepLifeApp.xcdatamodel */,
+			);
+			currentVersion = 07D809671D479E950069200E /* DeepLifeApp.xcdatamodel */;
+			path = DeepLifeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07D809541D479E950069200E /* Project object */;
+}
