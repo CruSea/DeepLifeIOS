@@ -1,46 +1,61 @@
 //
-//  ViewController.swift
-//  DeepLifeApp
+//  DataTableViewController.swift
+//  TableExample
 //
-//  Created by Aman on 7/26/16.
-//  Copyright © 2016 Aman. All rights reserved.
+//  Created by Ralf Ebert on 27/04/15.
+//  Copyright (c) 2015 Example. All rights reserved.
 //
 
 import UIKit
 
-class share: UIViewController {
+class share: UITableViewController {
+    
+    // MARK: - UITableViewDataSource
     
 
+ 
+    @IBAction func increase(sender: AnyObject) {
+  
     
-    @IBOutlet weak var menubar: UIBarButtonItem!
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    }
+    @IBAction func incnumber(sender: AnyObject) {
+   
+    
+    
+    }
+    
+    
+  
+    
+    
+    @IBAction func decnumber(sender: AnyObject) {
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // Return the number of sections.
+        return 1
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // Return the number of rows in the section.
+        return 1
+    
+    
+    
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Your Report"
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        if revealViewController() != nil {
-            //            revealViewController().rearViewRevealWidth = 62
-            menubar.target = revealViewController()
-            menubar.action = "revealToggle:"
-            
-            revealViewController().rightViewRevealWidth = 150
-            menubar.target = revealViewController()
-            
-            
-            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-            
-            
-        }
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("sharecell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = " For how many people did you preach "
+        cell.detailTextLabel?.text
+        return cell
     }
-    
     
 }
-

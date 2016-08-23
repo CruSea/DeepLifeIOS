@@ -7,26 +7,24 @@
 //
 
 import UIKit
+import CoreData
 
-class newsfeed: UIViewController {
+class newsfeed: UITableViewController
+{
+    var List: Array<AnyObject> = []
     
+    // MARK: - View Controller Lifecycle
     
     @IBOutlet weak var menubar: UIBarButtonItem!
-   
-    
-    @IBOutlet weak var swipablecontainer: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
         
         
         if revealViewController() != nil {
             //            revealViewController().rearViewRevealWidth = 62
             menubar.target = revealViewController()
-            menubar.action = "revealToggle:"
+            menubar.action = #selector(SWRevealViewController.revealToggle(_:))
             
             revealViewController().rightViewRevealWidth = 150
             menubar.target = revealViewController()
@@ -38,13 +36,84 @@ class newsfeed: UIViewController {
             
         }
         
+        
+        
+        // Make the row height dynamic
+        tableView.estimatedRowHeight = tableView.rowHeight
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - UITableViewDataSource
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return List.count
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        
+        let AppDel: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let Context: NSManagedObjectContext = AppDel.managedObjectContext
+        let request = NSFetchRequest(entityName: "Disciples")
+        
+        List = try! Context.executeFetchRequest(request)
+        tableView.reloadData()
+        
+        
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        
+        
+        
+        let cell: NewsTableViewCell = tableView.dequeueReusableCellWithIdentifier("Cell") as! NewsTableViewCell
+        
+        let data: NSManagedObject = List[indexPath.row] as! NSManagedObject
+        
+        cell.title?.text = data.valueForKey("fullname") as? String
+        cell.newsContent?.text = data.valueForKey("email") as? String
+        
+        
+        
+        //  cell.newsImageView!.clipsToBounds = true
+        
+        let image = data.valueForKey("image") as? NSData
+        cell.newsImageView!.image = UIImage(data: image!)
+        //  cell.newsImageView!.frame = CGRectMake(40, 60, 40, 40)
+        
+        
+        
+        
+        // cell.newsImageView!.image = data.valueForKey("image")! as? UIImage
+        cell.dateNews?.text = data.valueForKey("phonenumber") as? String
+        
+        
+        return cell
+    }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        cell.contentView.backgroundColor = UIColor.clearColor()
+        
+        cell.layer.backgroundColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])
+        cell.layer.masksToBounds = false
+        cell.layer.cornerRadius = 3.0
+        cell.layer.shadowOffset = CGSizeMake(-1, 1)
+        cell.layer.shadowOpacity = 0.5
+        //  cell.contentView.addSubview(whiteRoundedView)
+        //  cell.contentView.sendSubviewToBack(whiteRoundedView)
+    }
     
 }
+
+
 

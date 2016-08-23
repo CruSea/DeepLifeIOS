@@ -10,6 +10,8 @@
 		072CF1771D508C8C0081BC95 /* winicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 072CF1761D508C8C0081BC95 /* winicon.png */; };
 		072CF17A1D5091130081BC95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072CF1781D5091130081BC95 /* Main.storyboard */; };
 		072CF17C1D50F14B0081BC95 /* card.png in Resources */ = {isa = PBXBuildFile; fileRef = 072CF17B1D50F14B0081BC95 /* card.png */; };
+		073E94BC1D6C35350050BF6A /* newsImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 073E94BB1D6C35350050BF6A /* newsImage.png */; };
+		073E94BE1D6C375C0050BF6A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E94BD1D6C375C0050BF6A /* NewsTableViewCell.swift */; };
 		07512E861D4BC4D100FC70A9 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 07512E851D4BC4D100FC70A9 /* phone.png */; };
 		078654751D4A468300D61689 /* Discedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078654741D4A468300D61689 /* Discedit.swift */; };
 		078654771D4B4EE700D61689 /* iconsocial.png in Resources */ = {isa = PBXBuildFile; fileRef = 078654761D4B4EE700D61689 /* iconsocial.png */; };
@@ -54,6 +56,14 @@
 		07D80A051D48AB370069200E /* adddisciple.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A041D48AB370069200E /* adddisciple.png */; };
 		07D80A071D48AB610069200E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D80A061D48AB610069200E /* back.png */; };
 		07D80A091D48E07C0069200E /* menuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D80A081D48E07C0069200E /* menuController.swift */; };
+		07DE42B91D5A330300427FE9 /* iconschedule.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DE42B81D5A330300427FE9 /* iconschedule.png */; };
+		07DE42BF1D5A3C7800427FE9 /* UIVViewController-SLPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE42BE1D5A3C7800427FE9 /* UIVViewController-SLPopup.swift */; };
+		07DE42C31D5A42E600427FE9 /* popover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE42C21D5A42E600427FE9 /* popover.swift */; };
+		07DE42C51D5A5ADF00427FE9 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE42C41D5A5ADF00427FE9 /* PopUpViewController.swift */; };
+		07DE42C71D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE42C61D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift */; };
+		07DE42C91D5A7AF200427FE9 /* schedulelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DE42C81D5A7AF200427FE9 /* schedulelist.swift */; };
+		07DE42CC1D5A895800427FE9 /* btn_decrs.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DE42CA1D5A895800427FE9 /* btn_decrs.png */; };
+		07DE42CD1D5A895800427FE9 /* btn_incrs.png in Resources */ = {isa = PBXBuildFile; fileRef = 07DE42CB1D5A895800427FE9 /* btn_incrs.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +87,8 @@
 		072CF1761D508C8C0081BC95 /* winicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winicon.png; sourceTree = "<group>"; };
 		072CF1791D5091130081BC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		072CF17B1D50F14B0081BC95 /* card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card.png; sourceTree = "<group>"; };
+		073E94BB1D6C35350050BF6A /* newsImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newsImage.png; sourceTree = "<group>"; };
+		073E94BD1D6C375C0050BF6A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		07512E851D4BC4D100FC70A9 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		078654741D4A468300D61689 /* Discedit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discedit.swift; sourceTree = "<group>"; };
 		078654761D4B4EE700D61689 /* iconsocial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconsocial.png; sourceTree = "<group>"; };
@@ -129,6 +141,14 @@
 		07D80A041D48AB370069200E /* adddisciple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adddisciple.png; sourceTree = "<group>"; };
 		07D80A061D48AB610069200E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		07D80A081D48E07C0069200E /* menuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = menuController.swift; path = ../menuController.swift; sourceTree = "<group>"; };
+		07DE42B81D5A330300427FE9 /* iconschedule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconschedule.png; sourceTree = "<group>"; };
+		07DE42BE1D5A3C7800427FE9 /* UIVViewController-SLPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVViewController-SLPopup.swift"; sourceTree = "<group>"; };
+		07DE42C21D5A42E600427FE9 /* popover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popover.swift; sourceTree = "<group>"; };
+		07DE42C41D5A5ADF00427FE9 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		07DE42C61D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmingPresentationCotroller.swift; sourceTree = "<group>"; };
+		07DE42C81D5A7AF200427FE9 /* schedulelist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = schedulelist.swift; sourceTree = "<group>"; };
+		07DE42CA1D5A895800427FE9 /* btn_decrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_decrs.png; sourceTree = "<group>"; };
+		07DE42CB1D5A895800427FE9 /* btn_incrs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_incrs.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +181,7 @@
 			children = (
 				07D809F81D4887FF0069200E /* Disciplelist+CoreDataProperties.swift */,
 				07D809F91D4887FF0069200E /* Disciplelistt.swift */,
+				07DE42BE1D5A3C7800427FE9 /* UIVViewController-SLPopup.swift */,
 				07D809BC1D47FF190069200E /* Helpers */,
 				07D809A91D47AE250069200E /* Swipable */,
 				07D8099C1D47A5C00069200E /* Images */,
@@ -184,6 +205,8 @@
 		07D8095E1D479E950069200E /* DeepLifeApp */ = {
 			isa = PBXGroup;
 			children = (
+				07DE42C61D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift */,
+				07DE42C41D5A5ADF00427FE9 /* PopUpViewController.swift */,
 				072CF1781D5091130081BC95 /* Main.storyboard */,
 				07D80A081D48E07C0069200E /* menuController.swift */,
 				07D809CE1D4870790069200E /* newsfeed.swift */,
@@ -200,6 +223,8 @@
 				07D809FE1D489F1A0069200E /* disctable.swift */,
 				078654741D4A468300D61689 /* Discedit.swift */,
 				0786547A1D4B620500D61689 /* menuslide.swift */,
+				07DE42C21D5A42E600427FE9 /* popover.swift */,
+				07DE42C81D5A7AF200427FE9 /* schedulelist.swift */,
 			);
 			path = DeepLifeApp;
 			sourceTree = "<group>";
@@ -225,6 +250,10 @@
 		07D8099C1D47A5C00069200E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				073E94BB1D6C35350050BF6A /* newsImage.png */,
+				07DE42CA1D5A895800427FE9 /* btn_decrs.png */,
+				07DE42CB1D5A895800427FE9 /* btn_incrs.png */,
+				07DE42B81D5A330300427FE9 /* iconschedule.png */,
 				072CF17B1D50F14B0081BC95 /* card.png */,
 				072CF1761D508C8C0081BC95 /* winicon.png */,
 				07512E851D4BC4D100FC70A9 /* phone.png */,
@@ -266,6 +295,7 @@
 		07D809BC1D47FF190069200E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				073E94BD1D6C375C0050BF6A /* NewsTableViewCell.swift */,
 				07D809C31D480B970069200E /* SWRevealViewController.h */,
 				07D809C41D480B970069200E /* SWRevealViewController.m */,
 				07D809BD1D47FF4D0069200E /* DeepLifeApp-Bridging-Header.h */,
@@ -380,7 +410,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07DE42CD1D5A895800427FE9 /* btn_incrs.png in Resources */,
 				07D809CB1D4870020069200E /* menuu.png in Resources */,
+				07DE42B91D5A330300427FE9 /* iconschedule.png in Resources */,
+				07DE42CC1D5A895800427FE9 /* btn_decrs.png in Resources */,
 				07D809A41D47A6140069200E /* help_3.png in Resources */,
 				072CF17C1D50F14B0081BC95 /* card.png in Resources */,
 				078654791D4B4F1800D61689 /* icon_nav_facebook.png in Resources */,
@@ -398,6 +431,7 @@
 				07D809CD1D4870260069200E /* menubar.png in Resources */,
 				07D809B31D47F5C30069200E /* splashlogo_xhdpi.png in Resources */,
 				07D8099B1D47A4AA0069200E /* Swipe1.xib in Resources */,
+				073E94BC1D6C35350050BF6A /* newsImage.png in Resources */,
 				07D80A051D48AB370069200E /* adddisciple.png in Resources */,
 				07D809A01D47A5F70069200E /* help_1.png in Resources */,
 				07D80A011D48AADB0069200E /* splashlogo_ldpi.png in Resources */,
@@ -432,9 +466,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D809621D479E950069200E /* Swipemaster.swift in Sources */,
+				07DE42BF1D5A3C7800427FE9 /* UIVViewController-SLPopup.swift in Sources */,
+				073E94BE1D6C375C0050BF6A /* NewsTableViewCell.swift in Sources */,
 				07D809FB1D4887FF0069200E /* Disciplelistt.swift in Sources */,
 				07D809D31D4871F60069200E /* share.swift in Sources */,
 				07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */,
+				07DE42C31D5A42E600427FE9 /* popover.swift in Sources */,
+				07DE42C71D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift in Sources */,
 				07D809FF1D489F1A0069200E /* disctable.swift in Sources */,
 				07D8099A1D47A4AA0069200E /* Swipe1.swift in Sources */,
 				07D809D11D48715B0069200E /* schedules.swift in Sources */,
@@ -444,7 +482,9 @@
 				078654751D4A468300D61689 /* Discedit.swift in Sources */,
 				07D809601D479E950069200E /* AppDelegate.swift in Sources */,
 				07D809C51D480B970069200E /* SWRevealViewController.m in Sources */,
+				07DE42C91D5A7AF200427FE9 /* schedulelist.swift in Sources */,
 				07D809CF1D4870790069200E /* newsfeed.swift in Sources */,
+				07DE42C51D5A5ADF00427FE9 /* PopUpViewController.swift in Sources */,
 				0786547B1D4B620500D61689 /* menuslide.swift in Sources */,
 				07D809AB1D47EA830069200E /* Discadd.swift in Sources */,
 				07D809AE1D47F32E0069200E /* Swipe2.swift in Sources */,

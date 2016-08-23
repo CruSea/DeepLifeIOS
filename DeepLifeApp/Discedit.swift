@@ -20,7 +20,7 @@ class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePic
     @IBOutlet weak var discemail: UITextField!
     
     @IBOutlet weak var makeschedule: UIButton!
-    @IBOutlet weak var banner: UIImageView!
+   
     @IBOutlet weak var completebuild: UIButton!
     @IBOutlet weak var sexlabell: UILabel!
  
@@ -36,18 +36,15 @@ class Discedit: UIViewController, NSFetchedResultsControllerDelegate, UIImagePic
         super.viewDidLoad()
         added.layer.cornerRadius = 10.0
         completebuild.layer.cornerRadius = 10.0
-        banner.layer.cornerRadius = 10.0
-        makeschedule.backgroundColor = UIColor.clearColor()
-        makeschedule.layer.cornerRadius = 5
+ 
         
-        imageHolder.layer.borderWidth = 1
+     
         imageHolder.layer.masksToBounds = false
         imageHolder.layer.borderColor = UIColor.orangeColor().CGColor
-        imageHolder.layer.cornerRadius = imageHolder.frame.height/2
+        imageHolder.layer.cornerRadius = imageHolder.frame.size.width/2
         imageHolder.clipsToBounds = true
 
-        makeschedule.layer.borderWidth = 1
-        makeschedule.layer.borderColor = UIColor.orangeColor().CGColor
+         
         
         if disc != nil {
             discname.text = disc?.fullname!

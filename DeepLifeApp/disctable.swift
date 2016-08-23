@@ -10,20 +10,20 @@ import UIKit
 import CoreData
 
 class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
-
     
- 
     
-   
+    
+    
+    
     @IBOutlet weak var menubar: UIBarButtonItem!
-        
+    
     let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-   
+    
     var frc : NSFetchedResultsController = NSFetchedResultsController()
     
     
     
-   
+    
     
     func fetchRequest() -> NSFetchRequest {
         
@@ -45,7 +45,7 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         
         
         
@@ -64,9 +64,9 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
             
             
         }
-
         
-      
+        
+        
         
         frc = getFRC()
         frc.delegate = self
@@ -79,7 +79,7 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
         }
         
         self.tableView.rowHeight = 60
-         self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
+        self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
         self.tableView.reloadData()
         
     }
@@ -120,13 +120,13 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
         
         return numberOfRowsInSection!
     }
- 
+    
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
         
- 
+        
         
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = UIColor.clearColor()
@@ -147,15 +147,28 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
         let discphone = disclst.phonenumber
         cell.detailTextLabel!.text = "Contact : \(discphone!)  "
         
-       
+        
         
         cell.imageView?.image = UIImage(data: (disclst.image)!)
         
         
-                return cell
+        return cell
     }
     
-    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        
+        
+        
+        cell.contentView.backgroundColor = UIColor.clearColor()
+        
+        cell.layer.backgroundColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])
+        cell.layer.masksToBounds = false
+        cell.layer.cornerRadius = 3.0
+        cell.layer.shadowOffset = CGSizeMake(-1, 1)
+        cell.layer.shadowOpacity = 0.5
+
+    }
     
     /*
      // Override to support conditional editing of the table view.
@@ -215,7 +228,7 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
             
         }
         
-           }
+    }
     
     
 }
