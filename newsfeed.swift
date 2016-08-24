@@ -19,7 +19,7 @@ class newsfeed: UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+          //  self.tableView.rowHeight = 60
         
         if revealViewController() != nil {
             //            revealViewController().rearViewRevealWidth = 62
@@ -39,8 +39,9 @@ class newsfeed: UITableViewController
         
         
         // Make the row height dynamic
-        tableView.estimatedRowHeight = tableView.rowHeight
-        tableView.rowHeight = UITableViewAutomaticDimension
+       // tableView.estimatedRowHeight = tableView.rowHeight
+        self.tableView.rowHeight = 200
+
         
         
     }
@@ -88,7 +89,7 @@ class newsfeed: UITableViewController
         
         let image = data.valueForKey("image") as? NSData
         cell.newsImageView!.image = UIImage(data: image!)
-        //  cell.newsImageView!.frame = CGRectMake(40, 60, 40, 40)
+         cell.newsImageView!.frame = CGRectMake(40, 60, 40, 40)
         
         
         
@@ -103,7 +104,7 @@ class newsfeed: UITableViewController
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
         cell.contentView.backgroundColor = UIColor.clearColor()
-        
+       
         cell.layer.backgroundColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])
         cell.layer.masksToBounds = false
         cell.layer.cornerRadius = 3.0

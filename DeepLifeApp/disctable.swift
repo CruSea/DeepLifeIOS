@@ -78,9 +78,10 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
             return
         }
         
-        self.tableView.rowHeight = 60
+        self.tableView.rowHeight = 100
         self.tableView.backgroundView = UIImageView(image: UIImage(named: "orange-bg"))
-        self.tableView.reloadData()
+        
+                self.tableView.reloadData()
         
     }
     
@@ -150,7 +151,7 @@ class disctable: UITableViewController, NSFetchedResultsControllerDelegate {
         
         
         cell.imageView?.image = UIImage(data: (disclst.image)!)
-        
+        cell.imageView?.image?.size
         
         return cell
     }
