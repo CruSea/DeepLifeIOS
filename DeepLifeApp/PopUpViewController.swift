@@ -8,17 +8,22 @@
 
 import UIKit
 import iAd
-
+import CoreData
 class PopUpViewController: UIViewController,UITextViewDelegate,  UITextFieldDelegate,UIPickerViewDataSource, UIPickerViewDelegate{
-
+    
     @IBOutlet weak var popUp: UIView!
     
     @IBOutlet weak var detail: UITextView!
     
     @IBOutlet weak var titl: UITextField!
     @IBOutlet weak var discname: UIPickerView!
-    var pickerDataSource = ["Amanuel", "Mule", "Sami", "Yared"];
-
+    
+    let managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    
+    // var pickerDataSource = ["Amanuel", "Mule", "Sami", "Yared"];
+    
+    var data = [Disciplelistt]()
+    
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -30,12 +35,17 @@ class PopUpViewController: UIViewController,UITextViewDelegate,  UITextFieldDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        discname.dataSource = self
+        discname.delegate = self
+        fetchData()
+        discname.reloadAllComponents()
+        
         self.discname.dataSource = self;
         self.discname.delegate = self;
         popUp.layer.cornerRadius = 10
         
         titl.returnKeyType = UIReturnKeyType.Done
-         detail.returnKeyType = UIReturnKeyType.Done
+        detail.returnKeyType = UIReturnKeyType.Done
         titl.delegate = self
         detail.delegate = self
         
@@ -50,26 +60,14 @@ class PopUpViewController: UIViewController,UITextViewDelegate,  UITextFieldDele
         // Do any additional setup after loading the view.
     }
     
-  
+    func fetchData(){
+        
+        let fetchRequest = NSFetchRequest(entityName: "Disciples")
+        if let fetchResults = (try? managedObjectContext.executeFetchRequest(fetchRequest)) as? [Disciplelistt] {
+            data = fetchResults
+            
+        }}
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -89,28 +87,36 @@ class PopUpViewController: UIViewController,UITextViewDelegate,  UITextFieldDele
     
     
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerDataSource.count;
+        
+        self.fetchData()
+        print(data.count)
+        return data.count
+        
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return pickerDataSource[row]
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        let oneData = data[row]
+        
+        
+        return (oneData.fullname)
     }
     
-
+    
     @IBAction func close(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func showAD(sender: AnyObject) {
         
     }
-
-   
+    
+    
     
     
 }
@@ -126,6 +132,6 @@ extension PopUpViewController: UIViewControllerTransitioningDelegate {
 
 extension PopUpViewController: UIGestureRecognizerDelegate {
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
-    return (touch.view === view)
+        return (touch.view === view)
     }
 }
