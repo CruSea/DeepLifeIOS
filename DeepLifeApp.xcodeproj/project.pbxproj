@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		072CF17A1D5091130081BC95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072CF1781D5091130081BC95 /* Main.storyboard */; };
 		073E94BE1D6C375C0050BF6A /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073E94BD1D6C375C0050BF6A /* NewsTableViewCell.swift */; };
+		074FC66A1D706647004391F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC6691D706647004391F1 /* RegisterViewController.swift */; };
+		074FC66C1D70689D004391F1 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074FC66B1D70689D004391F1 /* profile.swift */; };
 		078654751D4A468300D61689 /* Discedit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078654741D4A468300D61689 /* Discedit.swift */; };
 		0786547B1D4B620500D61689 /* menuslide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0786547A1D4B620500D61689 /* menuslide.swift */; };
 		07D809601D479E950069200E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D8095F1D479E950069200E /* AppDelegate.swift */; };
@@ -61,6 +63,8 @@
 /* Begin PBXFileReference section */
 		072CF1791D5091130081BC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		073E94BD1D6C375C0050BF6A /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		074FC6691D706647004391F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		074FC66B1D70689D004391F1 /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		078654741D4A468300D61689 /* Discedit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Discedit.swift; sourceTree = "<group>"; };
 		0786547A1D4B620500D61689 /* menuslide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuslide.swift; sourceTree = "<group>"; };
 		07D8095C1D479E950069200E /* DeepLifeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLifeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +158,7 @@
 		07D8095E1D479E950069200E /* DeepLifeApp */ = {
 			isa = PBXGroup;
 			children = (
+				074FC6691D706647004391F1 /* RegisterViewController.swift */,
 				07DE42C61D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift */,
 				07DE42C41D5A5ADF00427FE9 /* PopUpViewController.swift */,
 				072CF1781D5091130081BC95 /* Main.storyboard */,
@@ -174,6 +179,7 @@
 				0786547A1D4B620500D61689 /* menuslide.swift */,
 				07DE42C21D5A42E600427FE9 /* popover.swift */,
 				07DE42C81D5A7AF200427FE9 /* schedulelist.swift */,
+				074FC66B1D70689D004391F1 /* profile.swift */,
 			);
 			path = DeepLifeApp;
 			sourceTree = "<group>";
@@ -363,6 +369,7 @@
 				07D809FB1D4887FF0069200E /* Disciplelistt.swift in Sources */,
 				07D809D31D4871F60069200E /* share.swift in Sources */,
 				07D809681D479E950069200E /* DeepLifeApp.xcdatamodeld in Sources */,
+				074FC66C1D70689D004391F1 /* profile.swift in Sources */,
 				07DE42C31D5A42E600427FE9 /* popover.swift in Sources */,
 				07DE42C71D5A5B5F00427FE9 /* DimmingPresentationCotroller.swift in Sources */,
 				07D809FF1D489F1A0069200E /* disctable.swift in Sources */,
@@ -373,6 +380,7 @@
 				07D809FA1D4887FF0069200E /* Disciplelist+CoreDataProperties.swift in Sources */,
 				078654751D4A468300D61689 /* Discedit.swift in Sources */,
 				07D809601D479E950069200E /* AppDelegate.swift in Sources */,
+				074FC66A1D706647004391F1 /* RegisterViewController.swift in Sources */,
 				07D809C51D480B970069200E /* SWRevealViewController.m in Sources */,
 				07DE42C91D5A7AF200427FE9 /* schedulelist.swift in Sources */,
 				07D809CF1D4870790069200E /* newsfeed.swift in Sources */,
