@@ -13,12 +13,12 @@ import Foundation
 import CoreData
 
 extension Disciplelistt {
-
+    
     @NSManaged var fullname: String?
     @NSManaged var image: NSData?
     @NSManaged var country: String?
     @NSManaged var phonenumber: String?
     @NSManaged var email: String?
     @NSManaged var sex: String?
-
+    
 }
