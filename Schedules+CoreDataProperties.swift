@@ -1,5 +1,5 @@
 //
-//  Disciplelist+CoreDataProperties.swift
+//  Schedules+CoreDataProperties.swift
 //  DeepLifeApp
 //
 //  Created by Aman on 8/26/16.
@@ -12,13 +12,12 @@
 import Foundation
 import CoreData
 
-extension Disciplelistt {
+extension Schedules {
 
-    @NSManaged var country: String?
-    @NSManaged var email: String?
-    @NSManaged var fullname: String?
-    @NSManaged var image: NSData?
-    @NSManaged var phonenumber: String?
-    @NSManaged var sex: String?
+    @NSManaged var alarm_repeat: String?
+    @NSManaged var alarm_time: String?
+    @NSManaged var disciple_phone: String?
+    @NSManaged var discription: String?
+    @NSManaged var tiltle: String?
 
 }

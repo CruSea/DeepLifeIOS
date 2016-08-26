@@ -40,6 +40,18 @@
         <attribute name="mandatory" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Report" representedClassName=".Report" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="report_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Schedules" representedClassName=".Schedules" syncable="YES">
+        <attribute name="alarm_repeat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alarm_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="disciple_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="discription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tiltle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Testimony" representedClassName=".Testimony" syncable="YES">
         <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
@@ -61,6 +73,8 @@
         <element name="NEWSFEED_COLUMN" positionX="-36" positionY="81" width="128" height="75"/>
         <element name="QUESTION_ANSWER" positionX="-63" positionY="54" width="128" height="90"/>
         <element name="QUESTION_LIST" positionX="-54" positionY="63" width="128" height="120"/>
+        <element name="Report" positionX="-54" positionY="63" width="128" height="90"/>
+        <element name="Schedules" positionX="-63" positionY="54" width="128" height="120"/>
         <element name="Testimony" positionX="-72" positionY="45" width="128" height="90"/>
         <element name="User" positionX="-72" positionY="45" width="128" height="150"/>
     </elements>

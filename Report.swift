@@ -1,5 +1,5 @@
 //
-//  COUNTRY_COLUMN.swift
+//  Report.swift
 //  DeepLifeApp
 //
 //  Created by Aman on 8/26/16.
@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 
-class COUNTRY_COLUMN: NSManagedObject {
+class Report: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

@@ -14,12 +14,12 @@ import CoreData
 
 extension User {
 
-    @NSManaged var full_name: String?
-    @NSManaged var email: String?
-    @NSManaged var phone: String?
-    @NSManaged var password: String?
     @NSManaged var country: String?
-    @NSManaged var picture: NSData?
+    @NSManaged var email: String?
     @NSManaged var favourite_scripture: String?
+    @NSManaged var full_name: String?
+    @NSManaged var password: String?
+    @NSManaged var phone: String?
+    @NSManaged var picture: NSData?
 
 }
